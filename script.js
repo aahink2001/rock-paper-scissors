@@ -82,7 +82,7 @@ function playGame(playerMove) {
 
   localStorage.setItem('score', JSON.stringify(score));
   document.querySelector('.game-result').innerHTML = result;
-  document.querySelector('.game-play').innerHTML = `You Picked <img class="icons bg" src="/Excercise/RockPaperScissors/thumbnail/${playerMove}.svg" alt="${playerMove}">  Computer Picked <img class="icons bg" src="/Excercise/RockPaperScissors/thumbnail/${computerMove}.svg" alt="${computerMove}">`;
+  document.querySelector('.game-play').innerHTML = `You Picked <img class="icons bg" src="thumbnail/${playerMove}.svg" alt="${playerMove}">  Computer Picked <img class="icons bg" src="thumbnail/${computerMove}.svg" alt="${computerMove}">`;
 
   //Updating  Score Each Time
   updateScore()
