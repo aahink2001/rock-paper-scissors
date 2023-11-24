@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="header-container">
+    <p class="header">Rock Paper Scissors</p>
+  </div>
+  <div class="btn-container">
+    <button onclick="
+    playGame('Rock');
+    " class="rock-btn "><img class="icons icons-small" src="/Excercise/RockPaperScissors/thumbnail/Rock.svg"
+        alt=""></button>
+
+    <button onclick="
+    playGame('Paper');
+    " class="paper-btn"><img class="icons icons-small" src="/Excercise/RockPaperScissors/thumbnail/Paper.svg"
+        alt=""></button>
+
+    <button onclick="
+    playGame('Scissors');
+    " class="scissors-btn"><img class="icons icons-small" src="/Excercise/RockPaperScissors/thumbnail/Scissors.svg"
+        alt=""></button>
+  </div>
+  <div class="result-container">
+    <p class="game-result g-result"></p>
+    <p class="game-play g-play"></p>
+    <p class="scoreUpdates s-update"></p>
+  </div>
+  <div class="score-container">
+    <button onclick="
+      //Reset Values to 0
+      score.wins=0;
+      score.losses=0;
+      score.tie=0;
+
+      //Remove object from localStorage
+      localStorage.removeItem('score');
+
+      //Updating Score on Reset
+      updateScore()
+
+      " class="reset-btn">Reset Score</button>
+  </div>
+  <div class="footer-container">
+    <footer>Designed by AahinDev</footer>
+  </div>
+  
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
